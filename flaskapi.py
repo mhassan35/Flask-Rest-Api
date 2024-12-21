@@ -43,10 +43,6 @@ class Users(Resource):
         users = UserModel.query.all()
         return users, 201 
 
-class Users(Resource):
-    @marshal_with(userFields)
-    def get
-
 api.add_resource(Users, '/flaskapi/users/')
 
 @app.route('/')
